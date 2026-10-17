@@ -15,7 +15,7 @@ Pada program ini menyediakan 4 fungsi utama untuk pengoperasian data (CRUD):
 # Struktur Class
 Pada program ini terdiri dari **3 kelas utama** yang saling mendukung, yaitu:
 
-### 1. Class `Person`
+# 1. Class `Person`
 Berfungsi sebagai model data atau wadah objek yang merepresentasikan atribut individual dari setiap orang yang dikelola.
 - **Atribut:**
   - `String id` -> untuk menyimpan ID unik (*Primary Key*).
@@ -25,14 +25,14 @@ Berfungsi sebagai model data atau wadah objek yang merepresentasikan atribut ind
   - `String jenisKelamin` -> untuk menyimpan data jenis kelamin (Laki-laki / Perempuan).
 - **Method:** Constructor untuk inisialisasi objek serta Getter dan Setter untuk masing-masing atribut.
 
-### 2. Class `Database`
+# 2. Class `Database`
 Berfungsi sebagai pengelola koneksi (*connection manager*) dan eksekusi query ke database MySQL (`db_people`).
 - **Fungsi Utama:**
   - Menghubungkan aplikasi ke server MySQL XAMPP via JDBC Driver (`mysql-connector-j`).
   - `selectQuery(String query)` -> digunakan untuk mengeksekusi perintah query SQL `SELECT` dan mengembalikan hasilnya dalam bentuk `ResultSet`.
   - `insertUpdateDeleteQuery(String query)` -> digunakan untuk mengeksekusi perintah SQL pembawa perubahan data (`INSERT`, `UPDATE`, `DELETE`).
 
-### 3. Class `PeopleMenu` extends `JFrame`
+# 3. Class `PeopleMenu` extends `JFrame`
 Berfungsi sebagai antarmuka grafis (GUI) utama aplikasi yang menampung seluruh komponen visual sekaligus mengatur logika interaksi pengguna dan pengolahan data.
 - **Fungsi Utama:**
   - `insertData()` -> digunakan untuk memvalidasi input dan mengeksekusi query `INSERT` untuk menyimpan data baru ke database.
@@ -91,16 +91,19 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 Pada program ini juga terdapat beberapa penanganan error handling, yaitu:
 
 ### 1. Validasi Kolom Kosong
-![Error Field Kosong] <img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/969dc59a-d5d6-42be-94ac-4ea438be4f27" />
+
+<img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/969dc59a-d5d6-42be-94ac-4ea438be4f27" />
 
 *Sistem akan menampilkan pop-up peringatan jika pengguna mencoba menambah atau mengubah data tanpa mengisi seluruh kolom atau jika ComboBox belum dipilih (masih `???`).*
 
 ### 2. Validasi ID Duplikat (Primary Key Check)
-![Error ID Duplikat] <img width="800" height="449" alt="Error_menggunakan ID yang sudah ada" src="https://github.com/user-attachments/assets/f32c3430-be58-4699-afd9-6ea7cebeb3e1" />
+
+<img width="800" height="449" alt="Error_menggunakan ID yang sudah ada" src="https://github.com/user-attachments/assets/f32c3430-be58-4699-afd9-6ea7cebeb3e1" />
 
 *Sistem melakukan pengecekan ke database saat proses penambahan data. Jika ID yang dimasukkan sudah terdaftar, muncul dialog error pencegahan duplikasi data.*
 
 ### 3. Validasi Pemilihan Data Tabel (Update & Delete)
-![Error Belum Pilih Data] <img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/a5f0c3d9-fed8-4128-8d98-844fec119fbc" />
+
+<img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/a5f0c3d9-fed8-4128-8d98-844fec119fbc" />
 
 Jika pengguna menekan tombol **Update** atau **Delete** tanpa memilih/mengeklik salah satu baris data pada tabel terlebih dahulu, sistem akan menampilkan peringatan untuk memilih data di tabel.*
