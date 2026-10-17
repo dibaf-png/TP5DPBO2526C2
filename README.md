@@ -1,4 +1,4 @@
-# Janji
+<img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/54a0f482-16a5-4171-a9f8-3b1f52f505cd" /># Janji
 Saya Farah Diba Nur Malinda dengan NIM 2502083 mengerjakan Tugas Praktikum 5 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 
 ---
@@ -12,35 +12,34 @@ Pada program ini menyediakan 4 fungsi utama untuk pengoperasian data (CRUD):
 
 ---
 
-
 # Struktur Class
 Pada program ini terdiri dari **3 kelas utama** yang saling mendukung, yaitu:
 
 ### 1. Class `Person`
 Berfungsi sebagai model data atau wadah objek yang merepresentasikan atribut individual dari setiap orang yang dikelola.
 - **Atribut:**
-  - `String id` —> untuk menyimpan ID unik (*Primary Key*).
-  - `String nama` —> untuk menyimpan data nama.
-  - `String tahunLahir` —> untuk menyimpan data tahun kelahiran.
-  - `String kategori` —> untuk menyimpan kategori status (Siswa, Mahasiswa, Dosen, Staff, Umum).
-  - `String jenisKelamin` —> untuk menyimpan data jenis kelamin (Laki-laki / Perempuan).
+  - `String id` -> untuk menyimpan ID unik (*Primary Key*).
+  - `String nama` -> untuk menyimpan data nama.
+  - `String tahunLahir` -> untuk menyimpan data tahun kelahiran.
+  - `String kategori` -> untuk menyimpan kategori status (Siswa, Mahasiswa, Dosen, Staff, Umum).
+  - `String jenisKelamin` -> untuk menyimpan data jenis kelamin (Laki-laki / Perempuan).
 - **Method:** Constructor untuk inisialisasi objek serta Getter dan Setter untuk masing-masing atribut.
 
 ### 2. Class `Database`
 Berfungsi sebagai pengelola koneksi (*connection manager*) dan eksekusi query ke database MySQL (`db_people`).
 - **Fungsi Utama:**
   - Menghubungkan aplikasi ke server MySQL XAMPP via JDBC Driver (`mysql-connector-j`).
-  - `selectQuery(String query)` —> digunakan untuk mengeksekusi perintah query SQL `SELECT` dan mengembalikan hasilnya dalam bentuk `ResultSet`.
+  - `selectQuery(String query)` -> digunakan untuk mengeksekusi perintah query SQL `SELECT` dan mengembalikan hasilnya dalam bentuk `ResultSet`.
   - `insertUpdateDeleteQuery(String query)` -> digunakan untuk mengeksekusi perintah SQL pembawa perubahan data (`INSERT`, `UPDATE`, `DELETE`).
 
 ### 3. Class `PeopleMenu` extends `JFrame`
 Berfungsi sebagai antarmuka grafis (GUI) utama aplikasi yang menampung seluruh komponen visual sekaligus mengatur logika interaksi pengguna dan pengolahan data.
 - **Fungsi Utama:**
-  - `insertData()` —> digunakan untuk memvalidasi input dan mengeksekusi query `INSERT` untuk menyimpan data baru ke database.
-  - `updateData()` —> digunakan untuk memvalidasi input dan mengeksekusi query `UPDATE` untuk memperbarui data yang dipilih di database.
-  - `deleteData()` —> digunakan untuk mengeksekusi query `DELETE` untuk menghapus data dari database setelah konfirmasi pengguna.
-  - `clearForm()` — untuk mengosongkan input form, mereset pilihan ComboBox, mengaktifkan kembali field ID, dan mereset status baris terpatri (`selectedIndex = -1`).
-  - `setTable()` — untuk membaca seluruh baris dari database MySQL melalui `selectQuery("SELECT * FROM people")` dan memperbarui isi `JTable` secara dinamis.
+  - `insertData()` -> digunakan untuk memvalidasi input dan mengeksekusi query `INSERT` untuk menyimpan data baru ke database.
+  - `updateData()` -> digunakan untuk memvalidasi input dan mengeksekusi query `UPDATE` untuk memperbarui data yang dipilih di database.
+  - `deleteData()` -> digunakan untuk mengeksekusi query `DELETE` untuk menghapus data dari database setelah konfirmasi pengguna.
+  - `clearForm()` -> untuk mengosongkan input form, mereset pilihan ComboBox, mengaktifkan kembali field ID, dan mereset status baris terpatri (`selectedIndex = -1`).
+  - `setTable()` -> untuk membaca seluruh baris dari database MySQL melalui `selectQuery("SELECT * FROM people")` dan memperbarui isi `JTable` secara dinamis.
 
 ---
 
@@ -71,13 +70,19 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 # Dokumentasi
 
 ### 1. Tambah Data (Add)
-![Tambah Data] 
+
+<img width="800" height="449" alt="Add_data - Copy" src="https://github.com/user-attachments/assets/7da6ddaf-8d13-4509-941c-756a9b0136d6" />
+
 
 ### 2. Ubah Data (Update)
-![Update Data]
+
+<img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/5f758650-ce2a-40c7-8c4a-5c19eb34d1cf" />
+
 
 ### 3. Hapus Data (Delete)
-![Delete Data]
+
+<img width="800" height="449" alt="Delete_data" src="https://github.com/user-attachments/assets/5214dd7e-b733-456d-87a4-78125274b639" />
+
 
 ---
 
@@ -86,13 +91,16 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 Pada program ini juga terdapat beberapa penanganan error handling, yaitu:
 
 ### 1. Validasi Kolom Kosong
-![Error Field Kosong] 
+![Error Field Kosong] <img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/969dc59a-d5d6-42be-94ac-4ea438be4f27" />
+
 *Sistem akan menampilkan pop-up peringatan jika pengguna mencoba menambah atau mengubah data tanpa mengisi seluruh kolom atau jika ComboBox belum dipilih (masih `???`).*
 
 ### 2. Validasi ID Duplikat (Primary Key Check)
-![Error ID Duplikat]
+![Error ID Duplikat] <img width="800" height="449" alt="Error_menggunakan ID yang sudah ada" src="https://github.com/user-attachments/assets/f32c3430-be58-4699-afd9-6ea7cebeb3e1" />
+
 *Sistem melakukan pengecekan ke database saat proses penambahan data. Jika ID yang dimasukkan sudah terdaftar, muncul dialog error pencegahan duplikasi data.*
 
 ### 3. Validasi Pemilihan Data Tabel (Update & Delete)
-![Error Belum Pilih Data]
+![Error Belum Pilih Data] <img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/a5f0c3d9-fed8-4128-8d98-844fec119fbc" />
+
 Jika pengguna menekan tombol **Update** atau **Delete** tanpa memilih/mengeklik salah satu baris data pada tabel terlebih dahulu, sistem akan menampilkan peringatan untuk memilih data di tabel.*
