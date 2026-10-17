@@ -15,7 +15,7 @@ Pada program ini menyediakan 4 fungsi utama untuk pengoperasian data (CRUD):
 # Struktur Class
 Pada program ini terdiri dari **3 kelas utama** yang saling mendukung, yaitu:
 
-# 1. Class `Person`
+**1. Class `Person`**
 Berfungsi sebagai model data atau wadah objek yang merepresentasikan atribut individual dari setiap orang yang dikelola.
 - **Atribut:**
   - `String id` -> untuk menyimpan ID unik (*Primary Key*).
@@ -25,14 +25,14 @@ Berfungsi sebagai model data atau wadah objek yang merepresentasikan atribut ind
   - `String jenisKelamin` -> untuk menyimpan data jenis kelamin (Laki-laki / Perempuan).
 - **Method:** Constructor untuk inisialisasi objek serta Getter dan Setter untuk masing-masing atribut.
 
-# 2. Class `Database`
+**2. Class `Database`**
 Berfungsi sebagai pengelola koneksi (*connection manager*) dan eksekusi query ke database MySQL (`db_people`).
 - **Fungsi Utama:**
   - Menghubungkan aplikasi ke server MySQL XAMPP via JDBC Driver (`mysql-connector-j`).
   - `selectQuery(String query)` -> digunakan untuk mengeksekusi perintah query SQL `SELECT` dan mengembalikan hasilnya dalam bentuk `ResultSet`.
   - `insertUpdateDeleteQuery(String query)` -> digunakan untuk mengeksekusi perintah SQL pembawa perubahan data (`INSERT`, `UPDATE`, `DELETE`).
 
-# 3. Class `PeopleMenu` extends `JFrame`
+**3. Class `PeopleMenu` extends `JFrame`**
 Berfungsi sebagai antarmuka grafis (GUI) utama aplikasi yang menampung seluruh komponen visual sekaligus mengatur logika interaksi pengguna dan pengolahan data.
 - **Fungsi Utama:**
   - `insertData()` -> digunakan untuk memvalidasi input dan mengeksekusi query `INSERT` untuk menyimpan data baru ke database.
