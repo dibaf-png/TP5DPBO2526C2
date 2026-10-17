@@ -72,17 +72,17 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 
 # Dokumentasi
 
-### 1. Tambah Data (Add)
+**1. Tambah Data (Add)**
 
 <img width="800" height="449" alt="Add_data - Copy" src="https://github.com/user-attachments/assets/7da6ddaf-8d13-4509-941c-756a9b0136d6" />
 
 
-### 2. Ubah Data (Update)
+**2. Ubah Data (Update)**
 
 <img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/5f758650-ce2a-40c7-8c4a-5c19eb34d1cf" />
 
 
-### 3. Hapus Data (Delete)
+**3. Hapus Data (Delete)**
 
 <img width="800" height="449" alt="Delete_data" src="https://github.com/user-attachments/assets/5214dd7e-b733-456d-87a4-78125274b639" />
 
