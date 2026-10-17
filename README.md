@@ -1,4 +1,4 @@
-<img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/54a0f482-16a5-4171-a9f8-3b1f52f505cd" /># Janji
+# Janji
 Saya Farah Diba Nur Malinda dengan NIM 2502083 mengerjakan Tugas Praktikum 5 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 
 ---
