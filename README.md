@@ -83,7 +83,6 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 
 <img width="800" height="449" alt="Delete_data" src="https://github.com/user-attachments/assets/5214dd7e-b733-456d-87a4-78125274b639" />
 
-
 ---
 
 # Error Handling
@@ -106,4 +105,6 @@ Pada program ini juga terdapat beberapa penanganan error handling, yaitu:
 
 <img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/a5f0c3d9-fed8-4128-8d98-844fec119fbc" />
 
-Jika pengguna menekan tombol **Update** atau **Delete** tanpa memilih/mengeklik salah satu baris data pada tabel terlebih dahulu, sistem akan menampilkan peringatan untuk memilih data di tabel.*
+*Jika pengguna menekan tombol **Update** atau **Delete** tanpa memilih/mengeklik salah satu baris data pada tabel terlebih dahulu, sistem akan menampilkan peringatan untuk memilih data di tabel.*
+
+---
