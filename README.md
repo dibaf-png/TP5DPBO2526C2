@@ -92,19 +92,19 @@ Pengguna dapat menekan tombol `Cancel` kapan saja untuk memanggil method `clearF
 
 Pada program ini juga terdapat beberapa penanganan error handling, yaitu:
 
-### 1. Validasi Kolom Kosong
+**1. Validasi Kolom Kosong**
 
 <img width="800" height="449" alt="Error_salah satu data tidak diisi" src="https://github.com/user-attachments/assets/969dc59a-d5d6-42be-94ac-4ea438be4f27" />
 
 *Sistem akan menampilkan pop-up peringatan jika pengguna mencoba menambah atau mengubah data tanpa mengisi seluruh kolom atau jika ComboBox belum dipilih (masih `???`).*
 
-### 2. Validasi ID Duplikat (Primary Key Check)
+**2. Validasi ID Duplikat**
 
 <img width="800" height="449" alt="Error_menggunakan ID yang sudah ada" src="https://github.com/user-attachments/assets/f32c3430-be58-4699-afd9-6ea7cebeb3e1" />
 
 *Sistem melakukan pengecekan ke database saat proses penambahan data. Jika ID yang dimasukkan sudah terdaftar, muncul dialog error pencegahan duplikasi data.*
 
-### 3. Validasi Pemilihan Data Tabel (Update & Delete)
+**3. Validasi Pemilihan Data Tabel (Update dan Delete)**
 
 <img width="800" height="449" alt="Update_data" src="https://github.com/user-attachments/assets/a5f0c3d9-fed8-4128-8d98-844fec119fbc" />
 
